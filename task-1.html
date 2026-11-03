@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Electronics Store Website</title>
+        <style>
+            body{
+                font-family: Arial, sans-serif;
+                background-color: #f2f2f2;
+                margin:0px;
+            }
+            header{
+                background-image: linear-gradient(to right, #333, #666);
+                color: #fff;
+                padding: 5px;
+                margin:0px;
+                font-style:oblique;
+                text-align: center;
+            }
+             nav {
+                background-image: linear-gradient(90deg,rgb(71, 63, 63),rgb(177, 171, 171));
+                background-size: cover;
+                padding: 15px;
+                text-align: center;
+            }
+
+            nav a {
+                color:rgb(246, 241, 241);
+                text-decoration: none;
+                margin: 10px;
+                font-size: 18px;
+            }
+
+            nav a:hover {
+                color: rgb(23, 176, 125);
+           }
+           .laptops{
+                text-align:center;
+                display: flex;
+                justify-content: center;
+                font-size: 20px;
+                padding:20px;
+                margin:30px;
+            }
+            .Laptops1{
+                text-align:center;
+                display: flex;
+                justify-content: center;
+                font-size: 20px;
+                margin:20px;
+            }
+            .Desktop{
+                padding: 5px;
+                margin:5px;
+                border: 1px solid #181717;
+                border-radius: 15px;
+                background-color: #f8f7f7;
+                width: 400px;
+            }
+            .Mobile{
+                text-align:center;
+                display: flex;
+                justify-content: center;
+                font-size: 20px;
+            }
+            .smartphones{
+                padding: 10px;
+                margin:10px;
+                border: 1px solid #181717;
+                border-radius: 15px;
+                background-color: #f8f7f7;
+                width: 400px;
+            }
+            span.badge {
+                color:#1b1818;
+                background-color: #ff0000;
+                border:2px solid #f6eded;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+
+            <h1>Electronics Store</h1>
+            <p>Welcome to our electronics store!</p>
+
+        </header>
+
+        <nav>
+            <a href="Home.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About</a>
+            <a href="check-out.html">Check Out</a>
+        </nav>
+        <section id="home">
+            <h1 style="text-align: center; font-style:italic; font-size: 24px;">Laptops</h1>
+            <p style="text-align: center; font-size: 18px;">Check out our latest laptops!</p>
+            <div class="laptops">
+              <div class="Desktop">
+                <h1>Dell Xps-16</h1>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlcwg0uKcEjF5fgfiuCdQDkaGkrrZLYaTx0bePgMHHFg&s=10"
+                width="250" height="150" alt="Laptop Image">
+                <span class="badge">50% OFF</span>
+                <p>Intel Core i7 16GB RAM 1TB SSD 15.6 inch with MS OFFICE</p>
+              </div>
+              <div class="Desktop">
+                <h2>Asus Zenbook</h2>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYn0PUaL3AZ81hzfZkM2TUOpixCAfDy87IwCTD4VFmEQ&s=10"
+                width="250" height="150" alt="Laptop Image">
+                <span class="badge">30% OFF</span>
+                <p>Intel Core i5 8GB RAM 256GB SSD 14 inch with MS OFFICE</p>
+              </div>
+              <div class="Desktop">
+                <h2>Lenovo ThinkPad X1 Carbon</h2>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9zKbO3Ei4La6JOfL7FCmJhANR2TWCbFs4kK9BTwrlpA&s=10"
+                width="250" height="150" alt="Laptop Image">
+                <span class="badge">20% OFF</span>  
+                <p>Intel Core i7 16GB RAM 512GB SSD 14 inch with MS OFFICE</p>
+              </div>
+            </div>
+            <div class="Laptops1">
+                <div class="Desktop">
+                    <h2>HP Spectre x360</h2>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlcwg0uKcEjF5fgfiuCdQDkaGkrrZLYaTx0bePgMHHFg&s=10"
+                    width="250" height="150" alt="Laptop Image">
+                   <p>Intel Core i7 16GB<br> RAM 512GB SSD 13.3 inch with MS OFFICE</p>
+                </div>
+               <div class="Desktop">
+                   <h2>Apple MacBook Pro</h2>
+                   <img src="data:image/webp;base64,UklGRu4MAABXRUJQVlA4IOIMAAAwOQCdASrBANwAPj0cjEOiIaGWGQzsIAPEtLdnuF4BuXl/HyWADn4eXEdInPvw/Oz7c6/8Gx51Av6X/+N08fTVzoX/f3iH1rf4x6pv7SevV1dWm5yYuOGK/qfDU8D9uv8R0xvzrxDPm8IP+8/KTmo4dfKb+Xegr/i/+d7Vv+d/zPuM88z2Mf6t/uewz6IB1n2lBbzebzebzebzebzebzebzebzeYDf39ySjYWPul75f4V8BlRz5XiI/DxX1L+UqD7eOKYPUZAy7x6z/s7hDjnsnrSfGWEEEw+wFAFa29ZV3NV+qr9fcESGsFE6rp2RhsNA8RXsGAjPQuxWGf84KMU8VzCvsRwvcME/6ABFc8+xR0bdX1v8Eu0B5dzmjeN1dGIdQCw+Iup8M6tSH6+4HrSfRY3t9PJn1zyHKb8g4RCs+QrYZqsl3+Cc4BSFAewzb+s7uTAuxYCDIvRH2BP9MuVYulE0arDyJu2fqtSGgK98cpSU/JTLkNJBUWhAuEf81ISGeqRdrHCtziZDZ9voFX53qs1U5N0XX8teDk4NjS51vIQi53v1LruKxVOGHmKIZVn0HIsljkXlYKEXuUAj+nckmx2Ox2Ox2Ox2Ox2Ox2Ox2OgAAP79qgSV2AAAAAA2/d/vGRruP730PMDWYbiV/wv83viwDfkOli80AmzmHQJ8k/HjAdU+rP/6cwRzO3tA8s0xZgGdOU8pdh12m7qR5169VD3wXHl+df5MJe1thnHDn33qymVg3JraHOdptHAs8Ut0H+BMR1UWpHmaiYKxZ5Qv6NSdZS98MHg9QDuCZ0nKznrewJw9u6H2fFVrgdnWAcduhAxLdMVL84nIkguhixSBYpZ4nhgA6tIlTv/9HG3/5yAEpUdPqNgSSLw/D7+Kph0xWzDtne6TZ53MTrvyvdlrtvBgqJg28RGeSw8d1O6QmAC/zOxXN8bQySc/y/DNdh7kwadLji8lGCaklHhaMIjBa9GiG5G+523iXcn7bF7d513T/aOFULcCcXKHK53YA0pFehK8A3luP/MZ/CxLDNn0NYG1JO2P7MHT+5HIT+XW56e85+W+zOvxec4mIhPtCaQucWEv+W+3W4Tb6RJJYaVzByX3BZHEq0MUfsmIMHrScwUY1BpzqWU+zsCkBDDPi8F89fU9AB9WkQiQzWMBCE8KNl9wr/qPlmu7Em2qOwSbm8Mnpn94WPGuhdhy9BLvFMb5nA5hRytgeiQvR5kB+uTAcKkRt2b1v+1qsfez3f/g+ZEZwhd6xXBbEY1YDOx2rLKanhyMsMZRQnaS+JThDUGkOjLOhKHnqXy1s28DZ0KgTyAU9D3lgQatiHkfA+5Ob8n+qz1DuUv+F6fbkmsTPd86WG8Kghjtd+KDdLEN4AWVpGrJGxoNGHLDjmsmq2hcoeah43kJ1a4w/Nm3FwEPxhInM3W9/YvoW1eiwTQU2RNeHkRXznkLmhLEQmSOKAyIZOXOOtgr+VT5G6oJytw0f+ky4vPapcbig2fMUhLFDbM34zgqbchtGrdGzWUhQXUkcUjhTIb8E0W+hoT1JVKH2kULvhDRMtPddy1imkd6pCna/yLbQx5ZmYOI/Oit345C9S2RNeBpx5K4MfVJ3Uyj2hSiy7xKxrOiR4dBzZlYLUMtw1zMllSW7zStLh4XsKbu+jDYq/bBL2v2zSwh6PmvlhIlGUZfjKwK35rjM51dlilcJo3mCiSXequiuC0BMse7bjkt+b663Gg9qvkdMUb9few0uZnEEd4NHlv5qT668R6S1dA7V9zd+uYZE9dZPeGQOIlkQ9klijdwHwMYZjXPBxfVNbAp+Q6JeHQQ0zNhA2wFvJyv8JmBvcbCtKs0md+AO3rhGKKn8MJa/UP16bZ9lALeKNY8+L/SZfiGUBwvjtV/+Bni3fvlUAYD27MBXDX0tHf5L16Plz4voxG022IRUxB/GclQ2FFMtsrlmwCBeGgwlr76mk9Gj6s7rlNbWJ/3n4z0T5fpF9c8yP2HdimoRbSkDVamv/BGw0NZ8gD5Wq5fC7nmtY7Kbh/Ts7IYj23jYnE5UzJLjFJp4S3BCHney1c2sQMUlyyoxxbYAUhAQufdlkZjDOrsKutFpumBJgxPANao+rmJkC+3fveOQNvaqbWTGGDpp29IwrYiw0OHsy59tPTVZzyaK1N9sih5AYLIs6p1q8vAFaejXicerHqaeYPQsQGIPkR5dNF9BZgu1c5Clb4GoR33ls5tinLF03y48JGdK3gu4RNZXPNralYedmTFMrMKNLmRvA2bAa9B9nMfH5g90C/JFwa4GtDVIw8n+2OTzeEy3u2tWcf8HjYyRSx2noKQavv02vLSlxbiGagydrou2gEtA1gizQz27hA6b/QCSul87347zMK+LoPk3CJkz0kObBlFdAjBCMGRllPDSKUei7dRZNKUI6DDSFHNBWGcyd1mMZM9fDmZLvsARjHhyQ7doF/o+M4loMd5WyvhKKETq7f9UWc38qOU5LYg+kzGC6VoCaVGSqB8H17d3i00H/ZDsizBsnFvUd/K7JCN2DiU49zXovyP9eZcqwRRaEOrzeVc8zt+SWGpQdKoyATMiAFwztgDIOmpXhM3cpsyCw65LJyCx36/9W2wHPGU+jx1Mk+T2hOXOZowS+780QRk9zHwuMGLeolBcvOR4DcUKLFxezJPI8kH67jdmoYB9xIcWs6oB10X5AsSA4tiBu4samY2S+RU7+IUr+PXDniavXzwkWJ0fn/OvltZL9KVVENuuyBzPIqqkBcKz8D6uZBUx4H923p1p81FiFvZtSPOjvCNHxq90Z6DF5fX5SHFHYsFxI7Use5yFi6yjrTgNdChnqVaYPd6fEGtHz5aglDy7yRswbV4LsaZGPJq/S1gD66XKSm8ToGc+u+bniwbEstXHKMPGiVg5m0+YeYxK6HABT5jqyqekjciOY+Fdg7NoP3axu0KrGNa4B5XpfDyZTAOIoanHknQai38nePDhLiNiuty5oxbyzcC/fPP3E9UgUoOluKw+PVM/YizS/OZJ4jxx5lkNpdzc+QKcPeFAqvwG9Ez2NO2c9Bci63dx9biCoWNZWN//KtavGaZ4Ig0ed4/yWGfkgAfQwWjZFUyDIIEhG9CSX9t6N29z0oYze1ozblDMupEMarfP7oSjW/6uT7K2v0xKkPU4YpNThjUuiZBrvxcWs6RB8jeTslZr0b9+EetC0EvLoaziriQiKGondjXHzYwoLjqeX8wiuFVSG2iIwECQydOmwPu/N5xSTpPjCFteS2s8acszTeSR470xaYzfqG/0ZsSoC2gamtqiMQU1FvPNWmhU+rCY3twzAl/S9q2v5X35PBChI5nIjck/U6NInrn9/9eSa4kXY0ux7I+hO49lzB//cLjVmkXTvc3p4luwPjZ4T1rx0CbbZV74KQCnrqsmQf1rJJilz2nm3CHFh3jk1xcVV06u+V6pzf7SJ874P7ZGSApwwJepkdNfOG4CAqgbb4ZG7yFQRDEaWGSWGPrnQicHxa5VVcGp4ry5h6xzdN8JLQu48c5jQG4kvGlxvMOGQl17TxeOKiW0n8XCq/QDGI4lHsGR/lp/P2WU2xqDrCjQhKTjv+h3bY3fFnDm3yjxAyVqaIuHtmJCaaS1/9aSgpkvTRC/Ws5kTbe6q9rwdoI6vitmZfVfpwZ92KqBfRzIGrj8eRZcXUqLIKSzODQv8+SdhpNuBEvEtRR3jcujoADAwKf68qCwg8w8S8Ad+SV0rhhHm7plVKlMdLYwm18MqAhqF2LL9EkQntrYU/nx+KBiv5OthzoeULHO35akU/rKDNrjC+lSRtMSOYxW7lb0S9vPyaDCOKGv9VZPJmQtrxivvm+8rs804jcljn2Ns0m3TODAL1kiwYp4PvH+2VbMIzcqfwDqTQo7+ZhKytRWbbmX4PHj77ooiDSs+u/UcvwmUnAjOfvujCe6y56D0O5q3Popq5ZiWQOGVBG731LH7v2JWF1B3mTY/pf0frQkZSrVEYxUbpCUxxsi+oT6w5b9mv3JAsGSNt5BdYiu3YOGooFdLhgGpORhD4zVdox8x8rWPPDRX0RrRoGxaD6vg4JXgC3ku3TZM33k7qxJq0ACiLrlGn6O2kHTWqHganEuGHDbgTJ79fp/u8Urr/1JzkIzweZhRkPBMCJ03G5taehS2cg02Ju/vEgscARn6Kziwlotkh8ki2INeDcl1IQhn/ZkZpwGKUCHHwI/6YAagqJyB8Lf5p9iYjnQPn63wdXcv47PRD88U8DlN4jyBobQzal/qia7OntxhB8PEQurLLc57jDwvGDkzDdAIzBOYkYGM5q9bS0feJ6tUWNfcQfEK0W3iU1krxqim24uU4hMrLABGq8RwyWFw+1YL+Fcwb6QkF1ACUOGR00AAAAAAAAAAAA"
+                   width="250" height="150" alt="Laptop Image">
+                  <p>M5 Max 16GB RAM<br> 512GB SSD 13.3 inch</p>
+                </div>
+                <div class="Desktop">
+                    <h2>Microsoft Surface Laptop 5</h2>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0gbjHA3f_ZkxZJ3j1poJhd82Ix-ts8BWdVloiyc-Jmw&s=10"
+                    width="250" height="150" alt="Laptop Image">
+                    <p>Intel Core i7 16GB RAM 512GB SSD 13.5 inch with MS OFFICE</p>
+
+                </div>
+            </div>
+            <div class="Mobile">
+                <div class="smartphones">
+                    <h3>SAMSUNG Galaxy S26 ULTRA</h3>
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSKkjmgPLrRx3kFGIpKr78w4vt0zIzyBoxU9Vidtk2um3kEv8C9g-Hd9O44Z2C1RvxixYAUIwtN23zQdJcQsh5imnHnKpmQvaU2NSqusWqI_XXKhVKG2Aw18XV-m2V8ihLLoCZo-58&usqp=CAc"
+                    width="250" height="150" alt="Laptop Image">
+                    <p>6000mah 200x zoom camera snapdragon 8 elite extreme</p>
+                </div>
+                <div class="smartphones">
+                    <h4>Apple iPhone 18 Pro Max</h4>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE8W-5Kj7-bnpb1eTwfGEBFpi0vr1q3VCbAqR62LjVow&s=10"
+                    width="250" height="150" alt="Laptop Image">
+                    <p>5480mAH 45PX camera A20 pro bionic chip supeer fast performance</p>
+                </div>
+                <div class="smartphones">
+                    <h4>OnePlus 12 Pro</h4>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLCMuIm1AtEMgRQdQFooJwr4dvAMoSwhuogRjG9Yg4Nw&s"
+                    width="250" height="150" alt="Laptop Image">
+                    <p>5000mah 200x zoom camera snapdragon 8 elite extreme</p>
+                </div>
+            </div>
+        </section>
+    </body> 
+</html>
