@@ -1,5 +1,5 @@
-Name: M Manish Kumar
-Roll No:26001399
-Branch: CSD
-Section: 1
-Case: Electronics Store Website 
+Name: M Manish Kumar<br>
+Roll No:26001399<br>
+Branch: CSD<br>
+Section: 1<br>
+Case: Electronics Store Website <br>
