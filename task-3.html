@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexus Gaming & Esports Community</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background-color: #0d1117;
+      color: #e6edf3;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #161b22;
+      border-radius: 8px;
+      border: 1px solid #30363d;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    header h1 {
+      color: #00ff88;
+      font-size: 24px;
+      margin-bottom: 4px;
+    }
+    header p {
+      color: #8b949e;
+      font-size: 14px;
+    }
+    
+    /* Layout Grid */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .main-content {
+      flex: 2;
+      min-width: 300px;
+    }
+    .sidebar {
+      flex: 1;
+      min-width: 260px;
+    }
+    .card-box {
+      background-color: #161b22;
+      padding: 18px;
+      border-radius: 8px;
+      border: 1px solid #30363d;
+      margin-bottom: 20px;
+    }
+    h2 {
+      color: #00ff88;
+      font-size: 18px;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #30363d;
+      padding-bottom: 8px;
+    }
+
+    /* Game Profiles & Ratings Grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 12px;
+    }
+    .card {
+      background-color: #21262d;
+      border-radius: 6px;
+      padding: 12px;
+      border: 1px solid #30363d;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      border-color: #00ff88;
+    }
+    .card h3 {
+      font-size: 15px;
+      margin-bottom: 4px;
+      color: #f0f6fc;
+    }
+    .tag {
+      font-size: 12px;
+      color: #8b949e;
+      margin-bottom: 6px;
+    }
+    .rating {
+      color: #f1e05a;
+      font-weight: bold;
+      font-size: 13px;
+    }
+
+    /* Ranking Table Styling */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 5px;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #30363d;
+      font-size: 13px;
+    }
+    th {
+      background-color: #21262d;
+      color: #00ff88;
+    }
+    tr:hover {
+      background-color: #1c2128;
+    }
+    .rank-1 { color: #ffd700; font-weight: bold; }
+    .rank-2 { color: #c0c0c0; font-weight: bold; }
+    .rank-3 { color: #cd7f32; font-weight: bold; }
+
+    /* Lists for Tournaments & News */
+    .list-item {
+      padding: 10px 0;
+      border-bottom: 1px solid #21262d;
+    }
+    .list-item:last-child {
+      border-bottom: none;
+    }
+    .badge {
+      background-color: #238636;
+      color: white;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>⚡ Nexus Gaming & Esports Hub</h1>
+    <p>Game Profiles, Leaderboards, Tournaments & Community News</p>
+  </header>
+
+  <div class="container">
+    
+    <!-- Main Content Area -->
+    <div class="main-content">
+      
+      <!-- Featured Game Profiles & Ratings -->
+      <div class="card-box">
+        <h2>🎮 Game Profiles & Ratings</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Cyber Assault</h3>
+            <p class="tag">Tactical FPS</p>
+            <p class="rating">★ 4.8 / 5.0</p>
+          </div>
+          <div class="card">
+            <h3>Realm of Legends</h3>
+            <p class="tag">MOBA / Strategy</p>
+            <p class="rating">★ 4.6 / 5.0</p>
+          </div>
+          <div class="card">
+            <h3>Apex Velocity</h3>
+            <p class="tag">Battle Royale</p>
+            <p class="rating">★ 4.4 / 5.0</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Player & Team Leaderboards -->
+      <div class="card-box">
+        <h2>👑 Global Player & Team Leaderboard</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Player Profile</th>
+              <th>Team Info</th>
+              <th>Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="rank-1">1</td>
+              <td><strong>PhoenixX</strong></td>
+              <td>Cloud9</td>
+              <td>3,450</td>
+            </tr>
+            <tr>
+              <td class="rank-2">2</td>
+              <td><strong>ViperGirl</strong></td>
+              <td>Fnatic</td>
+              <td>3,210</td>
+            </tr>
+            <tr>
+              <td class="rank-3">3</td>
+              <td><strong>ShadowNinja</strong></td>
+              <td>Navi</td>
+              <td>2,980</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td><strong>HyperNova</strong></td>
+              <td>Sentinels</td>
+              <td>2,840</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+    <!-- Sidebar Area -->
+    <div class="sidebar">
+      
+      <!-- Tournament Schedule -->
+      <div class="card-box">
+        <h2>🏆 Tournament Schedule</h2>
+        <div class="list-item">
+          <strong>Valorant Masters</strong><br>
+          <span class="tag">Nov 15 • Prize: $50,000</span> <span class="badge">LIVE</span>
+        </div>
+        <div class="list-item">
+          <strong>CS:GO Showdown</strong><br>
+          <span class="tag">Nov 20 • Prize: $25,000</span>
+        </div>
+        <div class="list-item">
+          <strong>Apex Championship</strong><br>
+          <span class="tag">Dec 05 • Prize: $100,000</span>
+        </div>
+      </div>
+
+      <!-- Gaming News -->
+      <div class="card-box">
+        <h2>📰 Latest Gaming News</h2>
+        <div class="list-item">
+          <strong>Patch 9.10 Update</strong>
+          <p class="tag">Major agent rebalances and new map releases today.</p>
+        </div>
+        <div class="list-item">
+          <strong>World Esports Finals</strong>
+          <p class="tag">Championship venue officially announced for Stockholm.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
