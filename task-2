@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Medicare Express</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            header {
+                background-color: #f0f0f0;
+                padding: 1px;
+                text-align: center;
+                border-radius: 5px;
+                border: 1px solid #121111;
+                margin:15px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+            .set1 {
+                margin: 10px;
+            }
+            input {
+                padding: 10px;
+                text-align:center;
+                display: flex;
+                justify-content:flex-start;
+                border-radius: 10px;
+                border: 1px solid #ba1919;
+                margin-left: 30px;
+            }
+            button {
+                padding: 3px 5px;
+                background-color: #14ef52e8;
+                border-radius: 5px;
+                color: rgb(24, 23, 23);
+                border: none;
+                cursor: pointer;
+            }
+            nav{
+                background-color: #f9f8f8;
+                padding: 5px;
+                text-align: center;
+            }
+            nav a {
+                text-decoration: none;
+                margin:5px;
+            }
+            .set1 {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                border: 2px solid #098432a4;
+                border-radius:5px;
+                box-shadow: 0 9px 9px rgba(0, 0, 0, 0.1);
+                justify-content: center;
+        
+            }
+            .set2 {
+                display: flex;
+                gap: 10px;
+                margin-left: 20px;
+            }.set3 {
+                display: flex;
+                gap: 20px;
+                padding: 20px;
+            }
+            .set1 input {
+                width: 200px;
+            }
+            .set4 {
+                display: flex;
+                gap: 20px;
+                padding: 20px;
+                margin-right:20px;
+                flex-direction: column;
+
+            }
+            .set5 {
+                border-radius: 5px;
+                box-shadow: 0 9px 9px rgba(0, 0, 0, 0.1);
+                
+                
+            }
+            .set6 {
+                border-radius: 5px;
+                box-shadow: 0 9px 9px rgba(0, 0, 0, 0.1);
+            }
+            .set7 {
+                    border-radius: 5px;
+                    box-shadow: 0 9px 9px rgba(0, 0, 0, 0.1);
+            }
+            .set5-1, .set6-1, .set7-1 {
+                padding: 10px;
+            }
+            span {
+                font-weight: bold;
+                margin-right: 10px;
+            }
+
+            /* --- STYLES FOR APPOINTMENT BOOKING BOX & LABELS --- */
+            .set8 {
+                display: flex;
+                flex-direction: column;
+                padding: 24px;
+                background-color: #ffffff;
+                border-radius: 12px;
+                border: 1px solid #e2e8f0;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+                max-width: 400px;
+                width: 100%;
+                margin: 20px auto;
+                box-sizing: border-box;
+            }
+
+            .set8 h3 {
+                margin-top: 0;
+                margin-bottom: 20px;
+                color: #0f172a;
+                font-size: 20px;
+                font-weight: 700;
+                border-bottom: 2px solid #3b8a82;
+                padding-bottom: 8px;
+            }
+
+            .set8 label {
+                display: block;
+                font-size: 13px;
+                font-weight: 600;
+                color: #334155;
+                margin-bottom: 6px;
+                text-align: left;
+            }
+
+            .set-9, .set-12, .set-13 {
+                margin-bottom: 16px;
+            }
+
+            .set-10 {
+                display: flex;
+                gap: 12px;
+                margin-bottom: 16px;
+            }
+
+            .set-10 > div {
+                flex: 1;
+            }
+
+            .set8 select,
+            .set8 input[type="text"],
+            .set8 input[type="tel"],
+            .set8 input[type="date"],
+            .set8 input[type="time"] {
+                width: 100%;
+                padding: 10px 12px;
+                margin-left: 0; /* Reset previous margin */
+                border: 1px solid #cbd5e1;
+                border-radius: 8px;
+                background-color: #f8fafc;
+                font-size: 14px;
+                color: #1e293b;
+                box-sizing: border-box;
+                outline: none;
+                transition: border-color 0.2s, box-shadow 0.2s;
+            }
+
+            .set8 select:focus,
+            .set8 input:focus {
+                border-color: #3b8a82;
+                box-shadow: 0 0 0 3px rgba(59, 138, 130, 0.15);
+                background-color: #ffffff;
+            }
+
+            .set-14 {
+                margin-top: 20px;
+            }
+
+            .set-14 button {
+                width: 100%;
+                padding: 12px;
+                background-color: #3b8a82;
+                color: #ffffff;
+                font-weight: 600;
+                font-size: 15px;
+                border-radius: 8px;
+                transition: background-color 0.2s;
+            }
+
+            .set-14 button:hover {
+                background-color: #2d6a64;
+            }
+            
+            .set-9{
+                padding: 1px;
+                text-decoration: none;
+                margin:5px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Medicare Express</h1>
+            <p>Your trusted partner in Medicare solutions</p>
+        </header>
+
+        <nav>
+        <div class="set1">
+            <a><input type="text" placeholder="Search for doctors..."></a>
+            <div class="set2">
+            <a href="#all"><button>All</button></a>
+            <a href="#dermatologist"><button>Dermatologist</button></a>
+            <a href="#cardiologist"><button>Cardiologist</button></a>
+            <a href="#neurologist"><button>Neurologist</button></a>
+            </div>
+        </div>
+        </nav>
+
+        <!--Main content-->
+
+        <div class="set3">
+            <div class="set4">
+                <div class="set5">
+                    <div class="set5-1">
+                    <h2>DR. John Doe</h2>
+                    <p>Dermatologist with 10 years of experience</p>
+                    <span>Slots:</span>
+                    <button>9:00 AM</button>
+                    <button>10:00 AM</button>
+                    <button>11:00 AM</button>
+                    </div>
+                </div>
+                <div class="set6">
+                    <div class="set6-1">
+                    <h2>DR. Jane Smith</h2>
+                    <p>Cardiologist specializing in heart health</p>
+                <span>Slots:</span>
+                    <button>1:00 PM</button>
+                    <button>2:00 PM</button>
+                    <button>3:00 PM</button>
+                    </div>
+                </div>
+                <div class="set7">
+                    <div class="set7-1">
+                    <h2>DR. Emily Johnson</h2>
+                    <p>Neurologist focusing on brain and nervous system</p>
+                <span>Slots:</span>
+                    <button>1:00 PM</button>
+                    <button>2:00 PM</button>
+                    <button>3:00 PM</button>
+                </div>
+                </div>
+            </div>
+
+            <div class="set8">
+                <h3>Booking Appointments</h3>
+                <form>
+                    <div class="set-9">
+                        <label for="doctor">Select Doctor:</label>
+                        <select id="doctor" name="doctor">
+                            <option value="dr-john-doe">DR. John Doe</option>
+                            <option value="dr-jane-smith">DR. Jane Smith</option>
+                            <option value="dr-emily-johnson">DR. Emily Johnson</option>
+                        </select>
+                    </div>
+                    <div class="set-10">
+                        <div>
+                            <label>Date</label>
+                            <input type="date" id="slot" name="slot">
+                        </div>
+                        <div class="set-11">
+                            <label>Time</label>
+                            <input type="time" id="slot" name="slot">
+                        </div>
+                    </div>
+                    <div class="set-12">
+                        <label>Patient Name</label>
+                        <input type="text" id="patient-name" name="patient-name">
+                    </div>
+                    <div class="set-13">
+                        <label>Contact Number</label>
+                        <input type="tel" id="contact-number" name="contact-number">
+                    </div>
+                    <div class="set-14">
+                        <button type="submit">Book Appointment</button>
+                    </div>
+                </form>
+            </div>
+        </div> 
+    </body>
+</html>
